@@ -1,0 +1,23 @@
+{
+  "name": "pbconverter",
+  "description": "Currency Converter",
+  "main": "index.js",
+  "authors": [
+    "ifeature"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5"
+  }
+}

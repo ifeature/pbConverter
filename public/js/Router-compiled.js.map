@@ -1,0 +1,1 @@
+{"version":3,"sources":["Router.js"],"names":[],"mappings":"AAAA;;AAEA,IAAI,SAAS,YAAY;AACvB,MAAI,YAAJ,EAAkB,MAAlB,CADuB;;AAGvB,SAAO;AACL,kBAAc,YAAd;GADF,CAHuB;CAAX,EAAV","file":"Router-compiled.js","sourcesContent":["'use strict';\n\nvar Router = (function() {\n  let startRouting, routes;\n\n  return {\n    startRouting: startRouting\n  };\n})();\n"]}
