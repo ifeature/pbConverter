@@ -7,13 +7,12 @@
 
   class Currencies {
     constructor() {}
-
     /**
-     *
-     * @param amount
-     * @param from
-     * @param to
-     * @returns {*}
+     * Метод, позволяющий конвертировать один тип валюты в другой.
+     * @param {number} amount
+     * @param {string} from
+     * @param {string} to
+     * @returns {number}
      */
     convert(amount, from, to) {
       let result;

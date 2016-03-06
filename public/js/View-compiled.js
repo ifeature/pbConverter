@@ -31,7 +31,7 @@
       }
 
       container.appendChild(errorBox);
-      console.log(errorBox);
+      //console.log(errorBox);
     }
     show() {
       $('#modal1').openModal();
@@ -117,6 +117,12 @@
     $('select').on('change', bindingSelect);
 
     document.getElementById('changeButton').addEventListener('click', Controller.convertData); //???????????????
+  };
+
+  View.displayResult = function (result) {
+    let resultValue;
+    resultValue = document.getElementById('resultValue');
+    resultValue.value = result;
   };
 
   window.View = View;

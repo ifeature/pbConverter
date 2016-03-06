@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(function () {
   let View, fillOptions, bindingSelect, errorBoxTemplate;
   View = Object.create(null);
 
@@ -15,11 +15,11 @@
       errorBox = this._template.firstElementChild.cloneNode(true);
       errorBoxList = errorBox.querySelector('.collection');
 
-      while(errorBoxList.childElementCount > 0) {
-        errorBoxList.removeChild(errorBoxList.children[errorBoxList.childElementCount-1])
+      while (errorBoxList.childElementCount > 0) {
+        errorBoxList.removeChild(errorBoxList.children[errorBoxList.childElementCount - 1]);
       }
 
-      this._invaldFields.forEach(function(field) {
+      this._invaldFields.forEach(function (field) {
         errorItem = this._template.getElementById('errorBoxItem').content.cloneNode(true);
         errorItemField = errorItem.querySelector('.errorField');
         errorItemField.innerText = field;
@@ -27,11 +27,11 @@
       }, this);
 
       while (container.childElementCount > 1) {
-        container.removeChild(container.children[container.childElementCount-1]);
+        container.removeChild(container.children[container.childElementCount - 1]);
       }
 
       container.appendChild(errorBox);
-      //console.log(errorBox);
+      console.log(errorBox);
     }
     show() {
       $('#modal1').openModal();
@@ -41,10 +41,10 @@
     }
   }
 
-  View.initRender = function(currency) {
+  View.initRender = function (currency) {
     let importFile, templates, templatesObj, pbConverter;
 
-    fillOptions = function(select, initialSelect, excludeOption) {
+    fillOptions = function (select, initialSelect, excludeOption) {
       let key, option, selectValue, initialSelectValue;
       const SYMBOL = {
         'UAH': 'Украинская гривна',
@@ -58,7 +58,7 @@
       }
 
       while (select.length > 0) {
-        select.remove(select.length-1);
+        select.remove(select.length - 1);
       }
 
       if (!excludeOption || excludeOption !== 'UAH') {
@@ -79,7 +79,7 @@
       }
     };
 
-    bindingSelect = function(evt) {
+    bindingSelect = function (evt) {
       let currentTarget, selectIDs, selectedIDx;
       selectIDs = ['changeCurrency', 'receiveCurrency'];
       currentTarget = evt.currentTarget;
@@ -97,13 +97,12 @@
       $('select').material_select();
     };
 
-
     pbConverter = document.getElementById('pbConverter');
 
     templatesObj = Object.create(null);
     importFile = document.head.querySelector('link[rel="import"]').import;
     templates = Array.from(importFile.getElementsByTagName('template'));
-    templates.forEach(function(template) {
+    templates.forEach(function (template) {
       templatesObj[template.id] = template.content.cloneNode(true);
     });
     errorBoxTemplate = templatesObj['errorBox'];
@@ -120,12 +119,10 @@
     document.getElementById('changeButton').addEventListener('click', Controller.convertData); //???????????????
   };
 
-  View.displayResult = function(result) {
-    let resultValue;
-    resultValue = document.getElementById('resultValue');
-    resultValue.value = result;
-  };
-
   window.View = View;
   window.View.ErrorBox = ErrorBox;
 })();
+
+//# sourceMappingURL=View-compiled.js.map
+
+//# sourceMappingURL=View-compiled-compiled.js.map

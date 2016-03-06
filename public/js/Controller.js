@@ -27,12 +27,11 @@
   };
 
   Controller.convertData = function() {
-    let inputValue, changeCurrency, receiveCurrency, resultValue, fields, errorBox;
+    let inputValue, changeCurrency, receiveCurrency, fields, errorBox;
     fields = [];
     inputValue = document.getElementById('inputValue');
     changeCurrency = document.getElementById('changeCurrency');
     receiveCurrency = document.getElementById('receiveCurrency');
-    resultValue = document.getElementById('resultValue');
 
     if (!Number.parseInt(inputValue.value)) {
       fields.push(inputValue.title);
@@ -46,13 +45,12 @@
 
     if (fields.length > 0) {
       errorBox = new View.ErrorBox(fields);
-      //console.log(errorBox);
       errorBox.render();
       errorBox.show();
       return;
     }
 
-    resultValue.value = currency.convert(Number.parseInt(inputValue.value), changeCurrency.value, receiveCurrency.value);
+    View.displayResult(currency.convert(Number.parseInt(inputValue.value), changeCurrency.value, receiveCurrency.value));
   };
 
   window.Controller = Controller;

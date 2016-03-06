@@ -1,22 +1,19 @@
 'use strict';
 
-(function() {
+(function () {
   class Currency {
-    constructor() {
-
-    }
+    constructor() {}
   }
 
   class Currencies {
-    constructor() {
+    constructor() {}
 
-    }
     /**
-     * Метод, позволяющий конвертировать один тип валюты в другой.
-     * @param {number} amount
-     * @param {string} from
-     * @param {string} to
-     * @returns {number}
+     *
+     * @param amount
+     * @param from
+     * @param to
+     * @returns {*}
      */
     convert(amount, from, to) {
       let result;
@@ -40,3 +37,7 @@
   window.Currency = Currency;
   window.Currencies = Currencies;
 })();
+
+//# sourceMappingURL=Model-compiled.js.map
+
+//# sourceMappingURL=Model-compiled-compiled.js.map
