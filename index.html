@@ -1,8 +1,50 @@
-<html>
-    <head>
-        <title>Converter</title>
-    </head>
-    <body>
-        Hello
-    </body>
-    <html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="ifeature">
+  <meta name="generator" content="IntelliJ IDEA">
+  <meta name="keywords" content="Конвертер валют">
+  <meta name="application-name" content="pbConverter">
+  <meta name="description" content="Конвертер валют согласно текущему курсу банка - Приватбанк">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="dns-prefetch" href="https://api.privatbank.ua">
+  <title>pbConverter — онлайн конвертер валют</title>
+  <link rel="import" href="include.html">
+  <link rel="stylesheet" href="libs/normalize-css/normalize.css">
+  <link rel="stylesheet" href="libs/Materialize/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="libs/jquery/dist/jquery.min.js" defer></script>
+  <script src="libs/Materialize/dist/js/materialize.min.js" defer></script>
+
+  <script src="js/config.js?rev=ec1e0ebefe39d0d24de1d0069d45fd03" defer></script>
+  <script src="js/Service.js?rev=a7eeaca675d4b9ad714f922eb5cefd1e" defer></script>
+  <script src="js/Model.js?rev=82c5bbe49aee62204afeb14834dc9252" defer></script>
+  <script src="js/View.js?rev=c80b82783e51b4062ec52ba8477aaaf2" defer></script>
+  <script src="js/Controller.js?rev=52739a2beec6c6d28bd055ad31ae568c" defer></script>
+  <script src="js/index.js?rev=61d6c8dc68484b74574c2c44db8518d0" defer></script>
+</head>
+<body class="page">
+<header class="page__header">
+  <nav class="page__navigation top-nav blue">
+    <div class="container">
+      <h1 class="title center-on-small-only">Конвертер валют</h1>
+    </div>
+  </nav>
+</header>
+<main class="page__main">
+  <div class="container">
+    <div class="row">
+      <article id="pbConverter"></article>
+    </div>
+  </div>
+</main>
+<footer class="page__footer page-footer blue darken-2">
+  <div class="footer-copyright">
+    <div class="container">© 2016 pbConverter, All rights reserved. </div>
+  </div>
+</footer>
+</body>
+</html>
