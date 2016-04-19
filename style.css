@@ -1,0 +1,1 @@
+:root{--color-indigo:#3f51b5}html{text-rendering:optimizeLegibility}.title{margin:0;font-weight:300}.page{display:flex;flex-flow:column;min-height:100vh}.page__navigation{height:auto;padding:10px 0}.page__main{flex-grow:1;padding:5%}footer.page__footer{margin:0;padding:0}.dropdown-content li>span,.page .dropdown-content li>a{color:var(--color-indigo)}
