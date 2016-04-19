@@ -1,4 +1,8 @@
 # [pbConverter](http://pbconverter.ifeature.net)  
+> Простой конвертер валют
+
+[![Stories in Ready](https://badge.waffle.io/ifeature/pbConverter.svg?label=ready&title=Ready)](http://waffle.io/ifeature/pbConverter)
+[![changelog][changelog-image]][changelog-url]
 
 pbConverter - это конвертер валют по текущему курсу банка - Приватбанк.
 Разработка и поддержка — [Артём](https://twitter.com/ifeature_)
@@ -32,5 +36,5 @@ pbConverter/
     │   └── View.js
     └──libs/
        ├── jquery/
-       └── Materialize
+       └── Materialize/
 ```

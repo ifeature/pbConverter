@@ -1,11 +1,14 @@
 {
   "name": "pbconverter",
+  "version": "0.2.0",
   "description": "Currency Converter",
   "main": "index.js",
-  "authors": [
-    "ifeature"
-  ],
-  "license": "ISC",
+  "author": {
+    "name": "ifeature",
+    "email": "me@ifeature.net",
+    "url": "ifeature.net"
+  },
+  "license": "MIT",
   "moduleType": [],
   "homepage": "",
   "private": true,
@@ -18,6 +21,11 @@
     "tests"
   ],
   "dependencies": {
-    "Materialize": "materialize#^0.97.5"
+    "Materialize": "materialize#^0.97.5",
+    "normalize-css": "^4.0.0",
+    "requirejs": "^2.2.0"
+  },
+  "devDependencies": {
+    "jasmine-jquery": "^2.1.1"
   }
 }
